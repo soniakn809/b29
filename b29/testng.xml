@@ -1,5 +1,16 @@
-<suite name="Suite">
-  <test name="Test">
+<suite name="Suite" parallel="tests">
+  <test name="RegressionGC">
+  <parameter name="grid" value="yes"/>
+  <parameter name="remoteAddr" value="http://localhost:4444"/>
+  <parameter name="browserName" value="chrome"/>
+    <packages>
+      <package name="script"/>
+    </packages>
+  </test>
+  <test name="RegressionFF">
+  <parameter name="grid" value="yes"/>
+  <parameter name="remoteAddr" value="http://localhost:4444"/>
+  <parameter name="browserName" value="firefox"/>
     <packages>
       <package name="script"/>
     </packages>

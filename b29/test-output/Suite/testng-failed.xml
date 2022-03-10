@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="script.Test1">
+      <class name="script.InvalidLogin">
         <methods>
+          <include name="testInvalidLogin"/>
           <include name="openApp"/>
-          <include name="testA"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- script.Test1 -->
+      </class> <!-- script.InvalidLogin -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
